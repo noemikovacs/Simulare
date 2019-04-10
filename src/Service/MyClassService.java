@@ -3,6 +3,10 @@ package Service;
 import Domain.MyClass;
 import Repository.InMemoryRepository;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class MyClassService {
@@ -54,4 +58,28 @@ public class MyClassService {
             throw new RuntimeException("This ID is still exist!");
         }
     }
+
+    /*private Date convertToDate(String date){
+
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        sdf.applyPattern("dd.MM.yyyy");
+        sdf.setLenient(false);
+        Date d;
+        try{
+            d = sdf.parse(date);
+        } catch (ParseException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+        return d;
+    }*/
+
+    //ora de incepere trebuie sa fie unica in cadrul unei zile
+
+    /*public void uniqStartDate(String id, String startDay){
+
+        MyClass mcExist = myClassRepository.findById(id);
+
+    }*/
+
+
 }

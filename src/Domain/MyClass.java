@@ -12,12 +12,7 @@ public class MyClass {
         this.duration = duration;
         this.startDate = startDate;
     }
-
-    public MyClass(String id, String name, String date) {
-        this.id = id;
-        this.name = name;
-        this.date = date;
-    }
+    
 
     @Override
     public String toString() {
