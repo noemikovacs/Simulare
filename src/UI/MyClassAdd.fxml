@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:controller="UI.MyClassAddController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <Spinner fx:id="spnId" initialValue="0" editable="true" min="0" max="2000000000"/>
+    <TextField fx:id="txtName" prefHeight="25.0" prefWidth="110.0" promptText="Name"/>
+    <TextField fx:id="txtDate" promptText="Date"/>
+    <TextField fx:id="txtDuration" promptText="Duration"/>
+    <TextField fx:id="txtStartDate" promptText="Start Date"/>
+
+    <Button text="Add" fx:id="btnAddMyClass" onAction="#btnAddClick" />
+    <Button text="Cancel" fx:id="btnCancel" onAction="#btnCancelClick" />
+</VBox>
+
+
+
